@@ -14,10 +14,13 @@ Helpful: add this to ~/.bash_profile to make a shortcut for it
 
 Things to change if stuff gets moved/ "settings":
 	in pcc.py, check sys.path against what it is where you're running it
+	in pcc.py, add more colors in get_black function
 	in pcc.bash, $printer to set printer. See list of printers with lpstat
 	in pcc.bash, $pyfile if the python file pcc.py gets moved
 	in pcc.bash, $tempname if your stuff is getting deleted accidentally
 
+To do:
+	allow for -d and -c options to be in any order (has to be -c first now)
 
 How it works
 1. pcc.py
