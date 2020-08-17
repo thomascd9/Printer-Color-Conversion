@@ -1,0 +1,28 @@
+pcc: Printer Color Conversion
+
+By Thomas Chang-Davidson
+
+Converts image file from color to greyscale equivalent in blue, green,
+red, or purple and then prints it out with lp
+
+usage: ./pcc.bash file_to_print.pdf -c {r, g, b, p} -d
+	-c for choice of color, blue is default
+	-d for double sided
+
+Helpful: add this to ~/.bash_profile to make a shortcut for it
+	alias pcc="~/Programming/Python/pcc/pcc.bash"
+
+Things to change if stuff gets moved/ "settings":
+	in pcc.py, check sys.path against what it is where you're running it
+	in pcc.bash, $printer to set printer. See list of printers with lpstat
+	in pcc.bash, $pyfile if the python file pcc.py gets moved
+	in pcc.bash, $tempname if your stuff is getting deleted accidentally
+
+
+How it works
+1. pcc.py
+	This is the python file that does the color conversion using
+	pdf2image and Python Image Library
+
+2. pcc.bash
+	This is the bash script that runs the color conversion
