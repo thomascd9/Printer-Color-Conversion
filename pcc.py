@@ -21,6 +21,7 @@ def get_black(args):
 
 # Removes black from an image by converting it to greyscale but with input
 #	BLACK as black instead of RGB (0, 0, 0)
+#	good resource: https://www.codementor.io/@isaib.cicourel/image-manipulation-in-python-du1089j1u
 def deblack(im, BLACK):
 	WLIM = 240 # threshold above which we accept it's white
 	
