@@ -5,8 +5,9 @@ By Thomas Chang-Davidson
 Converts image file from color to greyscale equivalent in blue, green,
 red, or purple and then prints it out with lp
 
-usage: pcc file_to_print.pdf -c {r, g, b, p} -d
+usage: pcc file_to_print.pdf -c {r, g, b, p, c, y, m} -d
 	-c for choice of color, blue is default
+		{red, green, blue, purple, cyan, yellow, magenta}
 	-d for double sided
 
 Helpful: add this to ~/.bash_profile to make a shortcut for it
@@ -28,4 +29,5 @@ How it works
 	pdf2image and Python Image Library
 
 2. pcc.bash
-	This is the bash script that runs the color conversion
+	This is the bash script that runs the color conversion, sends the job
+	to the printer, and opens the printer ap

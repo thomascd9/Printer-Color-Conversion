@@ -10,7 +10,7 @@ import re
 # Decides color based on input arguments
 def get_black(args):
 	if len(args) >= 5 and args[3] == "-c":
-		valid_colors = {"p":(50, 0, 100), "g":(0, 100, 0), "b":(0, 0, 100), "r":(100, 0, 0)}
+		valid_colors = {"p":(50, 0, 100), "g":(0, 100, 0), "b":(0, 0, 100), "r":(100, 0, 0), "c":(0, 255, 255), "y":(255, 255, 0), "m":(255, 0, 255)}
 		ret = valid_colors.get(args[4])
 		if ret != None:
 			return ret
